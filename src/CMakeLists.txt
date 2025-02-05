@@ -403,6 +403,10 @@ list(APPEND SOURCE_FILES
         displayapp/widgets/DotIndicator.cpp
         displayapp/widgets/StatusIcons.cpp
 
+		# compatability library stuff
+		displayapp/screens/wrapApp.cpp
+		displayapp/screens/externApp.cpp
+
         ## Settings
         displayapp/screens/settings/QuickSettings.cpp
         displayapp/screens/settings/Settings.cpp
@@ -427,7 +431,8 @@ list(APPEND SOURCE_FILES
         displayapp/screens/WatchFacePineTimeStyle.cpp
         displayapp/screens/WatchFaceCasioStyleG7710.cpp
 
-        ##
+        # compatability library implementation
+		compat.cpp
 
         main.cpp
         drivers/St7789.cpp
@@ -467,6 +472,7 @@ list(APPEND SOURCE_FILES
         components/settings/Settings.cpp
         components/timer/Timer.cpp
         components/alarm/AlarmController.cpp
+		components/compatProvider/compatProvider.cpp
         components/fs/FS.cpp
         drivers/Cst816s.cpp
         FreeRTOS/port.c

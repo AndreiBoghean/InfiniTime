@@ -30,6 +30,7 @@
 #include "displayapp/screens/Weather.h"
 #include "displayapp/screens/PassKey.h"
 #include "displayapp/screens/Error.h"
+#include "displayapp/screens/wrapApp.h"
 
 #include "drivers/Cst816s.h"
 #include "drivers/St7789.h"
@@ -101,6 +102,7 @@ DisplayApp::DisplayApp(Drivers::St7789& lcd,
     spiNorFlash {spiNorFlash},
     lvgl {lcd, filesystem},
     timer(this, TimerCallback),
+	compatProvider(this),
     controllers {batteryController,
                  bleController,
                  dateTimeController,
@@ -114,6 +116,7 @@ DisplayApp::DisplayApp(Drivers::St7789& lcd,
                  nullptr,
                  filesystem,
                  timer,
+				 compatProvider,
                  nullptr,
                  this,
                  lvgl,
