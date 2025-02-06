@@ -4,6 +4,8 @@
 # (1) infinitime OS directory
 # (2) glime repo download location.
 
+git clone git@github.com:AndreiBoghean/glime.git
+
 infi=$1
 glime=$2
 
