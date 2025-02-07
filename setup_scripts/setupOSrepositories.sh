@@ -7,6 +7,8 @@ cd $(dirname $(readlink -f $0))/.. # move into InfiniTime folder, relative to th
 # # download infinitime
 # git clone git@github.com:AndreiBoghean/InfiniTime.git
 
+npm install lv_font_conv
+
 mkdir infi_libs
 cd infi_libs
 

@@ -19,7 +19,6 @@ echo "glime: $glime"
 # "install" process
 
 cd $infi
-npm install lv_font_conv
 
 # insert the wrapper app which acts as the "barrier" between OS and external app.
 # the wrapper app calls the main() of the external app.
