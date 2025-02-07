@@ -41,5 +41,6 @@ then
 	make -j4 pinetime-mcuboot-app
 else
 	make -j4 pinetime-app
-	/home/andrei/uniY4/IndivProj/OSes/infiniEmu/infiniemu ./src/pinetime-app*.bin
+	# /home/andrei/uniY4/IndivProj/OSes/infiniEmu/infiniemu ./src/pinetime-app*.bin
+	$infi_libs/infiEmu/infiemu ./src/pinetime-app*.bin
 fi

@@ -1,26 +1,25 @@
 #! /bin/bash
 
-# args :
+# optional args :
 # (1) infinitime OS directory
 # (2) glime repo download location.
 
 infi=$1
 glime=$2
 
-if [ -f $infi ]; then infi="../"; fi
-if [ -f $glime ]; then glime="glime"; fi
+if [ -f $infi ]; then infi="$(dirname $(readlink -f $0))/.."; fi
+if [ -f $glime ]; then git clone git@github.com:AndreiBoghean/glime.git; glime=$infi/glimeSupport/glime; fi
 
 infi=$(readlink $infi -f)
 glime=$(readlink $glime -f)
 
-echo "infi: |$infi"
-echo "glime: |$glime"
+echo "infi: $infi"
+echo "glime: $glime"
 
 # "install" process
 
 cd $infi
 npm install lv_font_conv
-cd -
 
 # insert the wrapper app which acts as the "barrier" between OS and external app.
 # the wrapper app calls the main() of the external app.
