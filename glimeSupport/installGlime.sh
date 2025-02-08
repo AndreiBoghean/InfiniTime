@@ -8,7 +8,7 @@ infi=$1
 glime=$2
 
 if [ -f $infi ]; then infi="$(dirname $(readlink -f $0))/.."; fi
-if [ -f $glime ]; then git clone git@github.com:AndreiBoghean/glime.git; glime=$infi/glimeSupport/glime; fi
+if [ -f $glime ]; then glime=$infi/glimeSupport/glime; git clone git@github.com:AndreiBoghean/glime.git $glime; fi
 
 infi=$(readlink $infi -f)
 glime=$(readlink $glime -f)
