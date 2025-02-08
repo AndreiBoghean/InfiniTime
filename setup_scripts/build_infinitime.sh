@@ -42,5 +42,5 @@ then
 else
 	make -j4 pinetime-app
 	# /home/andrei/uniY4/IndivProj/OSes/infiniEmu/infiniemu ./src/pinetime-app*.bin
-	$infi_libs/infiEmu/infiemu ./src/pinetime-app*.bin
+	$infi_libs/infiniemu/infiniemu ./src/pinetime-app*.bin
 fi
