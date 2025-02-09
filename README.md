@@ -1,6 +1,6 @@
 # glime support stuff
 ##### quickstart guide:
-0. run `setupScripts/installPackages.sh` (note: only supports arch)
+0. run `setupScripts/installPackages.sh` (disclaimer: uses sudo for pacman; also only supports arch)
 1. run `glimeSupport/installGlime.sh`
 2. run `sudo setupScripts/setupOSrepositories.sh`
 2. run `setuptScripts/build_infinitime.sh`
