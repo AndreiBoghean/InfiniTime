@@ -1,4 +1,4 @@
-#! /bin/bash -xv
+#! /bin/bash
 # a script to download infinitime dependencies and also the emulator, placing them in InfiniTime/infi_libs folder.
 
 cd $(dirname $(readlink -f $0))/.. # move into InfiniTime folder, relative to this script's location in InfiniTime/setup_scripts
@@ -24,4 +24,7 @@ unzip $filename
 # clone the emulator for ininitime
 # git clone git@github.com:pipe01/InfiniEmu.git
 echo "dependency downloading should now be complete and present within $(pwd)"
-echo "note: to be able to use the emulator with the provided build script, please download the latest infiniemu build from https://github.com/pipe01/InfiniEmu/ and place it's contents within $(pwd)/infiniemu"
+echo "note: to be able to use the emulator with the provided build script,"
+echo "please download the latest infiniemu build from https://github.com/pipe01/InfiniEmu/"
+echo "and place it's contents within $(pwd)/infiniemu"
+echo "also note that the latest build this project supports is from pipeline #113"
