@@ -4,7 +4,7 @@
 cd $(dirname $(readlink -f $0))/.. # move into InfiniTime folder, relative to this script's location in InfiniTime/setup_scripts
 # ^ assume the script is being executed from some arbitrary path.
 
-npm install lv_font_conv
+sudo npm install lv_font_conv
 
 mkdir infi_libs
 cd infi_libs
