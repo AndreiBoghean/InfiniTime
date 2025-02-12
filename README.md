@@ -25,6 +25,7 @@ into a infi_libs folder in the repo root.
 `setup_scripts/build_infinitime.sh` takes 2 **optional positional** arguments
 1. either "quick" or anything else; specifies whether to do a full rebuild or just compile.
 2. either "emu" or anything else; specifies whether to build for infiniemu and run it.
+- note that the most recently tested version of infiniemu is [build number 113](https://github.com/pipe01/InfiniEmu/actions/runs/12402209098)
 
 
 # existing readme.md from InfiniTime
