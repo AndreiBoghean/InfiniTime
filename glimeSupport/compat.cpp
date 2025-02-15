@@ -57,6 +57,8 @@ void init(void* _s)
 	tcb = (s->tcb);
 	tcb_xy = (s->tcb_xy);
 	timers_freeable = (s->timers_freeable);
+
+	set_colours(0xFFFFFF, 0x000000); // since otherwise default foreground colour will be black.
 	return;
 }
 
