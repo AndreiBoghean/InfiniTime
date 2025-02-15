@@ -1,12 +1,12 @@
 # glime support stuff
-##### quickstart guide:
+#### quickstart guide:
 0. run `setupScripts/installPackages.sh` (disclaimer: uses sudo for pacman; also only supports arch)
-1. run `glimeSupport/installGlime.sh`
+1. run `glimeSupport/installGlime.sh` (note: if you've already downloaded glime, see detailed instructions below for how to use existing download.)
 2. run `setupScripts/setupOSrepositories.sh` (disclaimer: uses sudo to install npm package)
 2. run `setuptScripts/build_infinitime.sh`
 
-##### in detail:
-###### glime install
+#### in detail:
+##### glime install
 while this repository has been modified to expect the presence of glime, glime is not actually included in this fork.  
 to "install" it, you should run `glimeSupport/installGlime.sh`  
 this script takes 2 **optional positional** arguments  
@@ -14,8 +14,9 @@ this script takes 2 **optional positional** arguments
 2. glime repo location. (if not specified, clones glime to `infinitime/glimeSupport/glime`)  
 2.1 **this is what you should specify if you want to use your existing glime download**
 
-###### convenience scripts
-in addition to this, this fork also provides some convenience scripts for installation on the presumption that potential users have no prior experience this codebase.  
+##### convenience scripts
+in addition to this, this fork also provides some convenience scripts for installation on the presumption that potential users have no prior experience this codebase. 
+
 `setup_scripts/setupOSrepositories.sh` takes no arguments, requires root, and does:
 1. installs lv_font_conv npm package locally (this is what root is for; feel free to manually install and run without root)
 2. downloads gcc arm compiler for linux x86-64
