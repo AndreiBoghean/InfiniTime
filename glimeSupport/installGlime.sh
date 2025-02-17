@@ -26,7 +26,7 @@ ln -v -s $infi/glimeSupport/wrapApp.cpp $infi/src/displayapp/screens/wrapApp.cpp
 ln -v $infi/glimeSupport/wrapApp.h $infi/src/displayapp/screens/wrapApp.h # using hardlink here because header includes seem to mess up with soft links.
 
 # the external app that is OS-agnostic.
-ln -v -s $glime/externApp.cpp $infi/src/displayapp/screens/externApp.cpp
+ln -v -s $glime/externApp.c $infi/src/displayapp/screens/externApp.cpp # note that we're hiding a c file as a cpp file, because glime only supports c but infinitime is cpp.
 ln -v -s $glime/externApp.h $infi/src/displayapp/screens/externApp.h
 
 # the InfiniTime-specific implementation for the compatability library
